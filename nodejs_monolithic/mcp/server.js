@@ -9,10 +9,12 @@ const registry = require('./registry/toolRegistry');
 // 2. Import Context Providers
 const { gitTools, gitHandler } = require('./providers/gitProvider');
 const { logTools, logHandler } = require('./providers/logProvider');
+const { swaggerTools, swaggerHandler } = require('./providers/swaggerProvider'); 
 
 // 3. Register Providers into the Registry
 registry.registerProvider(gitTools, gitHandler);
 registry.registerProvider(logTools, logHandler);
+registry.registerProvider(swaggerTools, swaggerHandler);
 
 // 4. Initialize the MCP Server
 const mcpServer = new Server({
