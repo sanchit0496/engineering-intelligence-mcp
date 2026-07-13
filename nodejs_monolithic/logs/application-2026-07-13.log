@@ -1,4 +1,0 @@
-2026-07-13 22:01:35 info: Incoming request: GET /categories Body: {}
-2026-07-13 22:01:41 info: Incoming request: GET /order Body: {}
-2026-07-13 22:01:42 info: Incoming request: GET /orders Body: {}
-2026-07-13 22:20:43 info: Incoming request: GET /orders Body: {}
