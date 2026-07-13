@@ -1,7 +1,6 @@
-// swaggerConfig.js
-
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
+const path = require('path');
 
 const swaggerOptions = {
   definition: {
@@ -13,15 +12,15 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:3000', // Replace with your server's URL and port
+        url: 'http://localhost:3000',
         description: 'Development server',
       },
     ],
   },
-  apis: ['./routes/*.js'], // Path to the API docs
+  // 🟢 Yeh line change ki hai: Absolute path use kiya hai
+  apis: [path.join(__dirname, 'routes/*.js')], 
 };
 
-// Initialize swagger-jsdoc
 const swaggerSpec = swaggerJsDoc(swaggerOptions);
 
 module.exports = { swaggerSpec, swaggerUi };
