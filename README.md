@@ -19,6 +19,7 @@ history**, **Winston logs**, **OpenAPI/Swagger contracts**, and
 validated using both the **official MCP Inspector** and **Claude
 Desktop**.
 
+Built on top of https://github.com/sanchit0496/vectordb-rag 
 ------------------------------------------------------------------------
 
 # Features
